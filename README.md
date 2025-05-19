@@ -18,5 +18,3 @@ You can view the site here:
 Computer Engineering Student  
 Email: mrberknes0@gmail.com
 
-## License
-This project is for personal and educational use only.
