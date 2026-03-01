@@ -1,151 +1,213 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Berkay Enes Börekci | Portfolio</title>
+  <title>Berkay Enes Börekci</title>
+  <meta name="description" content="Berkay Enes Börekci – Computer Engineering student, software developer.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <button class="mode-toggle" onclick="toggleMode()">
-    <i class="fa-solid fa-moon"></i>
-    <span>Dark Mode</span>
+  <nav class="site-nav">
+    <a href="#" class="nav-name">berkay.</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+    </div>
+  </nav>
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+    <i class="fa-solid fa-bars"></i>
   </button>
-  <button class="lang-toggle" onclick="toggleLanguage()">
-    <i class="fa-solid fa-language"></i>
-    <span>EN/TR</span>
-  </button>
-
-  <header>
-    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFtzM5o9Hgxgw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728198757197?e=2147483647&v=beta&t=cCxo5Du9R_krrLBOArNJe46GU3pcpX2MQYDgy9zh8rQ" alt="Profil Fotoğrafı" class="header-img">
-    <h1>Berkay Enes Börekci</h1>
-    <p>Bilgisayar Mühendisliği Öğrencisi</p>
-  </header>
-
-
-  <div class="container">
-    <section class="card fade-in" id="about">
-      <h2>Hakkımda</h2>
-      <p>Merhaba! Ben Karabük Üniversitesi Bilgisayar Mühendisliği bölümünde 3. sınıf öğrencisiyim. Yapay zeka ve yazılım geliştirme konularında tutkulu bir öğrenciyim. Sürekli öğrenmeye odaklanıyorum ve teknoloji alanında kendimi geliştirmeye devam ediyorum.</p>
-      <div class="links">
-        <a href="https://github.com/berkayenesborekci" target="_blank">
-          <i class="fa-brands fa-github"></i>GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/berkayenesbörekci" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>LinkedIn
-        </a>
-        <a href="mailto:mrberknes0@gmail.com">
-          <i class="fa-solid fa-envelope"></i><span class="link-text">E-posta</span>
-        </a>
+  <section class="hero">
+    <div class="hero-profile">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4D03AQFtzM5o9Hgxgw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728198757197?e=2147483647&v=beta&t=cCxo5Du9R_krrLBOArNJe46GU3pcpX2MQYDgy9zh8rQ"
+        alt="Berkay Enes Börekci" class="hero-img">
+      <div class="hero-info">
+        <h1>Berkay Enes Börekci</h1>
+        <div class="subtitle" id="heroSubtitle">
+          <span id="typedText"></span><span class="cursor">|</span>
+        </div>
       </div>
-    </section>
-
-    <section class="card fade-in" id="experience">
-      <h2>Deneyim</h2>
-      <div class="timeline">
-        <div class="timeline-item">
+    </div>
+    <p class="hero-about">3rd year Computer Engineering student at Karabük University. Really into AI stuff, I can't
+      stop tinkering in my free time. I try to contribute to open source when I can, and I love playing around with new
+      tech.</p>
+    <div class="hero-links">
+      <a href="https://github.com/berkayenesborekci" target="_blank">
+        <i class="fa-brands fa-github"></i>GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/berkayenesbörekci" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>LinkedIn
+      </a>
+      <a href="mailto:mrberknes0@gmail.com">
+        <i class="fa-solid fa-envelope"></i>Email
+      </a>
+    </div>
+  </section>
+  <div class="content">
+    <section class="section" id="experience">
+      <div class="section-title">// experience</div>
+      <div class="entry">
+        <div class="entry-header">
           <h3>Google Developer Student Clubs Karabük</h3>
-          <div class="date">2023 – 2024</div>
-          <p><strong>Sosyal Medya Koordinatörü</strong> – Teknoloji odaklı içerik üretimi ve paylaşımı yaparak kulübün dijital görünürlüğünü artırdım. Topluluk etkinliklerini organize ettim ve sosyal medya stratejileri geliştirdim.</p>
+          <span class="date">2023 – 2024</span>
         </div>
-        <div class="timeline-item">
+        <div class="role">Social Media Coordinator</div>
+        <p>Ran the club's social media accounts, created tech content. Also helped organize events on the side.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
           <h3>Google Developer Groups on Campus Karabük</h3>
-          <div class="date">2023 – 2025</div>
-          <p><strong>Sosyal Medya Ekibi Yöneticisi</strong> – Projeleri ve etkinlikleri verimli bir şekilde koordine etmek için sosyal medya ekibini organize ettim ve yönettim. Topluluk büyümesi için stratejik planlar geliştirdim.</p>
+          <span class="date">2023 – 2025</span>
+        </div>
+        <div class="role">Social Media Team Lead</div>
+        <p>Built and led the social media team. Always had something in mind to grow the community.</p>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <div class="section-title">// education</div>
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Karabük University</h3>
+          <span class="date">2021 – 2027</span>
+        </div>
+        <div class="role">Computer Engineering</div>
+        <p>Undergrad student. Taking courses on software, algorithms, and AI — AI is my favorite part.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <h3>Fevzi Çakmak Anatolian High School</h3>
+          <span class="date">2017 – 2021</span>
+        </div>
+        <div class="role">High School Diploma</div>
+        <p>Graduated with honors.</p>
+      </div>
+    </section>
+    <section class="section" id="skills">
+      <div class="section-title">// skills</div>
+      <div class="skills-tags">
+        <span class="skill-tag"><i class="fa-brands fa-python"></i>Python</span>
+        <span class="skill-tag"><i class="fa-brands fa-html5"></i>HTML / CSS / JS</span>
+        <span class="skill-tag"><i class="fa-brands fa-java"></i>Java</span>
+        <span class="skill-tag"><i class="fa-brands fa-php"></i>PHP</span>
+        <span class="skill-tag"><i class="fa-brands fa-git-alt"></i>Git & GitHub</span>
+        <span class="skill-tag"><i class="fa-brands fa-google"></i>Google Cloud</span>
+        <span class="skill-tag"><i class="fa-solid fa-code"></i>C#</span>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="section-title">// projects</div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-card-body">
+            <h3>BERUDI</h3>
+            <p>A car rental website I built for a course project. Has admin and customer panels, you can add/remove
+              cars, make reservations, the whole thing works.</p>
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/berkayenesborekci/BERUDI" target="_blank"><i
+                  class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-body">
+            <h3>PetCare</h3>
+            <p>Desktop app for pet owners. Has vaccine tracking, weight charts and stuff. Built it with Windows Forms.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">Windows Forms</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/berkayenesborekci/PetCare" target="_blank"><i
+                  class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-body">
+            <h3>Console Task Manager</h3>
+            <p>Simple to-do app I wrote in Java. You can add and delete tasks from the console.</p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/berkayenesborekci/Console_Task_Manager" target="_blank"><i
+                  class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-body">
+            <h3>Data Transmission Simulator</h3>
+            <p>Made this for my networking class. Sends data over TCP sockets and does error detection with Parity,
+              CRC-16, and Hamming Code.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">TCP Sockets</span>
+              <span class="project-tag">Networking</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/berkayenesborekci/Data_Transmission_Simulator_with_Error_Detection"
+                target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <section class="card fade-in" id="education">
-      <h2>Eğitim</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Karabük Üniversitesi</h3>
-          <div class="date">2021 – 2027</div>
-          <p><strong>Bilgisayar Mühendisliği</strong> – Lisans programında aktif olarak öğrenim görüyorum. Yazılım geliştirme, algoritma tasarımı ve yapay zeka konularında derinlemesine eğitim alıyorum.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Fevzi Çakmak Anadolu Lisesi</h3>
-          <div class="date">2017 – 2021</div>
-          <p><strong>Lise Diploması</strong> – Birinci sınıf onur derecesi ile mezun oldum. Matematik ve fen bilimleri alanlarında güçlü bir temel oluşturdum.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="card fade-in" id="skills">
-      <h2>Teknik Beceriler</h2>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>Python</span>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>HTML, CSS, JavaScript</span>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>Java & PHP</span>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>Git & GitHub</span>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>Google Cloud</span>
-          </div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-name">
-            <span>C#</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="card fade-in" id="certificates">
-      <h2>Sertifikalar</h2>
-      <div class="certificates-grid">
-        <div class="certificate-item">
+    <section class="section" id="certificates">
+      <div class="section-title">// certificates</div>
+      <div class="cert-list">
+        <div class="cert-item">
           <h3>Generative AI Learning Path Program</h3>
-          <p>Google tarafından verilen yapay zeka öğrenme yolu sertifikası</p>
+          <p>AI learning path certificate by Google</p>
         </div>
-        <div class="certificate-item">
+        <div class="cert-item">
           <h3>GDSC Core Team Certificate</h3>
-          <p>Google Developer Student Clubs çekirdek takım sertifikası</p>
+          <p>Google Developer Student Clubs core team certificate</p>
         </div>
       </div>
     </section>
-
-    <section class="card fade-in" id="references">
-      <h2>Referanslar</h2>
-      <div class="references-grid">
-        <div class="reference-item">
-          <div class="reference-name">Ahmet Öztürk</div>
-          <div class="reference-title">Makine Mühendisi</div>
-          <p>E-posta: <a href="mailto:aoeztuerk@superonline.com">aoeztuerk@superonline.com</a></p>
+    <section class="section" id="references">
+      <div class="section-title">// references</div>
+      <div class="ref-grid">
+        <div class="ref-item">
+          <div class="ref-name">Ahmet Öztürk</div>
+          <div class="ref-title">Mechanical Engineer</div>
+          <a href="mailto:aoeztuerk@superonline.com">aoeztuerk@superonline.com</a>
         </div>
-        <div class="reference-item">
-          <div class="reference-name">Bayram Karaağaç</div>
-          <div class="reference-title">Mimar</div>
-          <p>E-posta: <a href="mailto:bkaraagac@karaagac.com">bkaraagac@karaagac.com</a></p>
+        <div class="ref-item">
+          <div class="ref-name">Bayram Karaağaç</div>
+          <div class="ref-title">Architect</div>
+          <a href="mailto:bkaraagac@karaagac.com">bkaraagac@karaagac.com</a>
         </div>
       </div>
     </section>
-
   </div>
-
   <footer>
-    <p>&copy; 2025 Berkay Enes Börekci | Tüm Hakları Saklıdır</p>
+    <div class="footer-links">
+      <a href="https://github.com/berkayenesborekci" target="_blank" aria-label="GitHub"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/berkayenesbörekci" target="_blank" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:mrberknes0@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 berkay enes börekci</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
+
 </html>
