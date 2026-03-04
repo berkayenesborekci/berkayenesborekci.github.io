@@ -13,5 +13,4 @@ You can view the site here:
 
 **Berkay Enes Börekci** 
 Computer Engineering Student  
-Email: mrberknes0@gmail.com
-
+Email: berkay.e.borekci@gmail.com
