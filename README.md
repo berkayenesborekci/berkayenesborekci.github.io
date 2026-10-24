@@ -7,9 +7,9 @@ You can view the site here:
 
 # About This Project
 - Responsive and modern CV website
-- Includes education, experience, technical and personal skills, certificates, and references
+- Includes experience, education, skills, projects, and certificates
 - Features direct links to my LinkedIn and GitHub profiles with custom icons
-- Built with pure HTML and CSS (no frameworks)
+- Built with pure HTML, CSS and a little vanilla JavaScript (no frameworks)
 
 **Berkay Enes Börekci** 
 Computer Engineering Student  

@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: light)').matches) t = 'light';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berkay Enes Börekci</title>
   <meta name="description" content="Berkay Enes Börekci – Computer Engineering student, software developer.">
+  <meta property="og:title" content="Berkay Enes Börekci">
+  <meta property="og:description" content="Computer Engineering student, software developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://berkayenesborekci.github.io">
+  <meta property="og:image" content="https://berkayenesborekci.github.io/profile.jpg">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="profile.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-</head>
-
+  <noscript><style>.section{opacity:1;transform:none}</style></noscript>
+  </head>
 <body>
   <nav class="site-nav">
     <a href="#" class="nav-name">berkay.</a>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certificates">Certificates</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
     </div>
   </nav>
-  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
     <i class="fa-solid fa-bars"></i>
   </button>
   <section class="hero">
     <div class="hero-profile">
       <img
-        src="https://media.licdn.com/dms/image/v2/D4D03AQFtzM5o9Hgxgw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728198757197?e=2147483647&v=beta&t=cCxo5Du9R_krrLBOArNJe46GU3pcpX2MQYDgy9zh8rQ"
+        src="profile.jpg" width="80" height="80"
         alt="Berkay Enes Börekci" class="hero-img">
       <div class="hero-info">
         <h1>Berkay Enes Börekci</h1>
@@ -40,14 +60,17 @@
       stop tinkering in my free time. I try to contribute to open source when I can, and I love playing around with new
       tech.</p>
     <div class="hero-links">
-      <a href="https://github.com/berkayenesborekci" target="_blank">
+      <a href="https://github.com/berkayenesborekci" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>GitHub
       </a>
-      <a href="https://www.linkedin.com/in/berkayenesbörekci" target="_blank">
+      <a href="https://www.linkedin.com/in/berkayenesb%C3%B6rekci" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>LinkedIn
       </a>
       <a href="mailto:berkay.e.borekci@gmail.com">
         <i class="fa-solid fa-envelope"></i>Email
+      </a>
+      <a href="cv.pdf" download="Berkay_Enes_Borekci_CV.pdf">
+        <i class="fa-solid fa-file-arrow-down"></i>Download CV
       </a>
     </div>
   </section>
@@ -109,7 +132,7 @@
               <span class="project-tag">Scikit-Learn</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/berkayenesborekci/Alzheimer_Disease_ML" target="_blank"><i
+              <a href="https://github.com/berkayenesborekci/Alzheimer_Disease_ML" target="_blank" rel="noopener noreferrer"><i
                   class="fa-brands fa-github"></i>GitHub</a>
             </div>
           </div>
@@ -125,7 +148,7 @@
               <span class="project-tag">SQLite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/berkayenesborekci/PetCare" target="_blank"><i
+              <a href="https://github.com/berkayenesborekci/PetCare" target="_blank" rel="noopener noreferrer"><i
                   class="fa-brands fa-github"></i>GitHub</a>
             </div>
           </div>
@@ -142,7 +165,7 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/berkayenesborekci/Data_Transmission_Simulator_with_Error_Detection"
-                target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
             </div>
           </div>
         </div>
@@ -161,13 +184,12 @@
         </div>
       </div>
     </section>
-
   </div>
   <footer>
     <div class="footer-links">
-      <a href="https://github.com/berkayenesborekci" target="_blank" aria-label="GitHub"><i
+      <a href="https://github.com/berkayenesborekci" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
           class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/berkayenesbörekci" target="_blank" aria-label="LinkedIn"><i
+      <a href="https://www.linkedin.com/in/berkayenesb%C3%B6rekci" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
           class="fa-brands fa-linkedin"></i></a>
       <a href="mailto:berkay.e.borekci@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
     </div>
@@ -175,5 +197,4 @@
   </footer>
   <script src="script.js"></script>
 </body>
-
 </html>

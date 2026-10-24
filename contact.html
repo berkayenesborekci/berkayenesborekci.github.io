@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t && window.matchMedia('(prefers-color-scheme: light)').matches) t = 'light';
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Berkay Enes Börekci</title>
+  <meta name="description" content="Get in touch with Berkay Enes Börekci.">
+  <meta property="og:title" content="Berkay Enes Börekci">
+  <meta property="og:description" content="Computer Engineering student, software developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://berkayenesborekci.github.io/contact.html">
+  <meta property="og:image" content="https://berkayenesborekci.github.io/profile.jpg">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" href="profile.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>.section{opacity:1;transform:none}</style></noscript>
+  </head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html" class="nav-name">berkay.</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#certificates">Certificates</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </nav>
+  <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <main class="contact-page">
+    <div class="section-title">// contact</div>
+    <h1>Get in touch</h1>
+    <p class="contact-intro">Have a project, an internship opportunity or just want to say hi? Send me a message and I will get back to you.</p>
+    <form class="contact-form" id="contactForm" novalidate>
+      <input type="text" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+      <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
+      <textarea name="message" rows="6" placeholder="Your message" aria-label="Your message" required></textarea>
+      <button type="submit"><i class="fa-solid fa-paper-plane"></i><span>Send</span></button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/berkayenesborekci" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/berkayenesb%C3%B6rekci" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:berkay.e.borekci@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2026 Berkay Enes Börekci</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
